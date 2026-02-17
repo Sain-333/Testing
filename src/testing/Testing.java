@@ -15,7 +15,8 @@ public class Testing {
         operacion = Integer.parseInt(JOptionPane.showInputDialog("Elija una operacion: \n"
                 + "1. Sumar \n"
                 + "2. Restar \n"
-                + "3. Salir: "));
+                + "3. Multiplicar\n"
+                + "4. Salir: "));
         
         switch (operacion) {
             case 1: System.out.print("Digite la primera canticad: ");
@@ -37,7 +38,17 @@ public class Testing {
                     System.out.println("El resultado es: "+resultado);
                     break;
                 
-            case: 3: break;
+                    
+            case 3 : System.out.print("Digite la primera canticad: ");
+                    numero1 = entrada.nextInt();
+                    System.out.print("Digite la segunda cantidad: ");
+                    numero2 = entrada.nextInt();
+                    
+                    resultado = numero1 * numero2;
+                    
+                    System.out.println("El resultado es: "+resultado);
+                    break;
+            case: 4: break;
             
             default : System.out.println("Error, se equivoco de operacion");
     }
