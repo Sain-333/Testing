@@ -19,7 +19,8 @@ public class Testing {
                 + "3. Multiplicar\n"
                 + "4. Dividir\n"
                 + "5. Potencia\n"
-                + "6. Salir: "));
+                + "6. Raiz\n"
+                + "7. Salir: "));
         
         switch (operacion) {
             case 1: System.out.print("Digite la primera canticad: ");
@@ -71,7 +72,17 @@ public class Testing {
                     System.out.println("El resultado es : "+resultado2);
                     break;
                     
-            case 6: break;
+                    
+            case 6: System.out.print("Digite la cantidad : ");
+            numero1 = entrada.nextInt();
+            
+                
+                resultado = (int) Math.sqrt(numero1);
+                
+                System.out.println("El resultado es: "+resultado);
+                
+                    break;
+            case 7: break;
             
             default : System.out.println("Error, se equivoco de operacion");
     }
